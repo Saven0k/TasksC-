@@ -1,14 +1,38 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//5. Напишите программу, которая на вход принимает одно число (N), а на выходе показывает все целые числа в промежутке от -N до N.
-//4 -> "-4, -3, -2, -1, 0, 1, 2, 3, 4"
-//2 -> " -2, -1, 0, 1,2"
-Console.WriteLine("Введите число");
-int a = int.Parse( s :Console.ReadLine());
-int b = a * (-1);
-while (b<=a)
-{
-    Console.Write(b + " , ");
-    b++;
-}
+// Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает последнюю цифру этого числа.
+//456 -> 6
+//782 -> 2
+//918 -> 8
 
-// Данное решение ъоть и глупое но очень быстрое и удобное
+Console.WriteLine("Введите трехзначное число: ");
+int number = int.Parse( s:Console.ReadLine());
+Console.WriteLine("                       ");
+bool a = true;
+while (a == true)
+{
+
+    if(number > 99 && number < 1000)
+    {
+        Console.WriteLine($"{number} -> {number % 10} ");
+        a = false;
+    }
+    else
+    {
+        a = false;
+        Console.WriteLine("Это не трехзначное число");
+        Console.WriteLine("Введите трехзначное число: ");
+        int number1 = int.Parse( s:Console.ReadLine());
+        if(number1 > 99 && number1 < 1000)
+        {
+        Console.WriteLine($"{number1} -> {number1 % 10} ");
+        a = false;
+        }
+        else
+        {
+
+        }
+
+
+    }
+    
+}

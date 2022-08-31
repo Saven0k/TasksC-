@@ -3,16 +3,25 @@
 //5 -> 2, 4
 //8 -> 2, 4, 6, 8
 // 
-Console.WriteLine("Введите число число: ");
-int number = int.Parse( s:Console.ReadLine());
+Console.WriteLine("Введите число : ");
+int number = int.Parse(Console.ReadLine());
 if(number >  0 )
 {
-    for(int i = 0 ; i <= number )
+    Console.Write($"{number} ->   ");
+    for (int i = 1; i < number; i++)
     {
-      if((number % 2) == 0)
-    {
-            Console.WriteLine($"Числа ")
-    }  
+        if(i % 2 == 0)
+        { 
+            Console.Write(i +  " , ");
+        }  
+        else 
+        {
+
+        }
     }
    
+}
+else
+{
+    Console.WriteLine("Число меньше нуля, оно не подходит");
 }

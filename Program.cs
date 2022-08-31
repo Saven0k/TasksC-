@@ -4,10 +4,7 @@ Console.WriteLine("Введите  первое число: ");
 int sqr = int.Parse( s :Console.ReadLine());
 Console.WriteLine("Введите  второе число: ");
 int number = int.Parse( s :Console.ReadLine());
-
-int result = number * number;
-
-if(result == sqr)
+if(sqr == number*number)
 {
     Console.WriteLine($"Число  {sqr} являеться квадратом числа {number}");
 }

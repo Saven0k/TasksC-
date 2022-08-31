@@ -3,7 +3,7 @@
 //456 -> 6
 //782 -> 2
 //918 -> 8
-
+// Решил будет прикольно
 Console.WriteLine("Введите трехзначное число: ");
 int number = int.Parse( s:Console.ReadLine());
 Console.WriteLine("                       ");

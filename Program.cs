@@ -1,46 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Введите первое число  : ");
-int number1 = int.Parse( s :Console.ReadLine());
-Console.WriteLine("Введите второе число  : ");
-int number2 = int.Parse( s :Console.ReadLine());
-Console.WriteLine("Введите третие число  : ");
-int number3 = int.Parse( s :Console.ReadLine());
+Console.WriteLine("Введите  число: ");
+float number = float.Parse( s :Console.ReadLine());
 
-if(number1>number2) 
+float srt = number % 2;
+
+
+if(srt == 0)
 {
-        Console.WriteLine($"Число {number1} самое большое ");
-        if(number1>number3)
-        {
+    Console.WriteLine("Да, оно четное");
 
-                Console.WriteLine($"Число {number1} самое большое ");
-
-        }
-        else
-        {
-
-
-            Console.WriteLine($"Число {number3} самое большое");
-        }
-
-}
+} 
 else
-
 {
-
-        
-        if(number2>number3)
-        {
-
-            Console.WriteLine($"Число {number2} самое большое ");
-
-        }
-
-        else
-        {
-
-            Console.WriteLine($"Число {number3} Самое большое число");
-        }
+    Console.WriteLine("Нет, оно не четное");
 }
+
+
+
 
 
 
